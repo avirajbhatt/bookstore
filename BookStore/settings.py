@@ -18,8 +18,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'q#uecl@5f=1%p8so*3i0n%a$!3!ad)rb3h_h@vs=jtm2zbyjhh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -116,15 +114,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-
-# SMTP Configuration
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'storebook182@gmail.com'
-EMAIL_HOST_PASSWORD = 'ypctckiddfiuwxas'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
